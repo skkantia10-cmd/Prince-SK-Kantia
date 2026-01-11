@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prince SK Kantia & Sawai | Portfolio</title>
+<style>
+  /* Reset */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+    color: #222;
+  }
+
+  /* Header / Hero */
+  header {
+    position: relative;
+    background-image: url('your-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    padding: 0 20px;
+  }
+  header h1 {
+    font-size: 3.8rem;
+    margin: 0;
+  }
+  header h2 {
+    font-weight: 300;
+    margin: 10px 0 20px 0;
+    font-size: 1.8rem;
+  }
+  header p.subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  /* Overlay box in header */
+  header .overlay-box {
+    border: 2px solid white;
+    padding: 20px 40px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  /* Container for content */
+  .container {
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  /* Section Titles */
+  h2.section-title {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+
+  /* About Section */
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+  }
+  .about img {
+    width: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+  .about .bio {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  /* Two column layout for sections */
+  .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  /* Contact info style */
+  .contact-info p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-info p span.icon {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #007bff;
+  }
+
+  /* Lists style */
+  ul.skills-list, ul.languages-list, ul.certifications-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul.skills-list li, ul.languages-list li, ul.certifications-list li {
+    background: #f0f7ff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #007bff;
+    font-weight: 600;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 700px) {
+    .two-columns {
+      grid-template-columns: 1fr;
+    }
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about .bio {
+      font-size: 1.05rem;
+    }
+  }
+
+  /* Footer */
+  footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Prince SK Kantia & Sawai</h1>
+  <h2>Software Engineer & Enthusiast</h2>
+  <p class="subtitle">Get the Perfect World and Get Yours</p>
+  <div class="overlay-box">Hyderabad, Pakistan</div>
+</header>
+
+<div class="container">
+
+  <!-- Contact Info -->
+  <section id="contact-info" class="contact-info">
+    <h2 class="section-title">Contact Information</h2>
+    <p><span class="icon">📞</span> +92 348 3921302</p>
+    <p><span class="icon">✉️</span> skkantia10@gmail.com</p>
+    <p><span class="icon">📍</span> Hyderabad, Pakistan</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about" style="margin-top: 40px;">
+    <img src="your-photo.jpg" alt="Prince SK Kantia" />
+    <div class="bio">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a Pre-Engineering student with a strong knowledge of AI and web development. I have completed multiple online courses and certifications in AI, productivity, and programming. Skilled in Amazon FBA, mobile hardware & software, and data analysis. Passionate about learning and applying modern technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section id="summary" style="margin-top: 40px;">
+    <h2 class="section-title">Summary</h2>
+    <p>
+      Pre-Engineering student with strong knowledge of AI and web development. Completed multiple online courses and certifications in AI, productivity, and programming. Skilled in Amazon FBA, mobile hardware & software, and data analysis. Passionate about learning and applying modern technologies.
+    </p>
+  </section>
+
+  <!-- Education & Work Experience -->
+  <section id="edu-experience" class="two-columns" style="margin-top: 40px;">
+    <div>
+      <h2 class="section-title">Education</h2>
+      <p><strong>Government Boys Higher Secondary School (GBHSS), Phullahdyoon</strong></p>
+      <p>Program: Pre-Engineering (12th Grade)</p>
+      <p>Expected Graduation: 2027</p>
+    </div>
+    <div>
+      <h2 class="section-title">Work Experience</h2>
+      <p><strong>Mobile Hardware & Software Technician</strong></p>
+      <ul>
+        <li>Hands-on experience repairing and troubleshooting mobile devices</li>
+        <li>Assisted in software updates and app installations</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" style="margin-top: 40px;">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+      <li><strong>Technical Skills:</strong> Web Development, Programming, AI Tools, Amazon FBA</li>
+      <li><strong>Soft Skills:</strong> Problem Solving, Time Management, Communication</li>
+      <li><strong>Other Skills:</strong> Mobile Hardware & Software</li>
+    </ul>
+  </section>
+
+  <!-- Projects & Certifications -->
+  <section id="projects" style="margin-top: 40px;">
+    <h2 class="section-title">Projects & Certifications</h2>
+    <ul class="certifications-list">
+      <li>Coursera & United Latino Students Association Certifications (Dec 2025)</li>
+      <li>Speed Up Data Analysis and Presentation Building – Credential ID: OQY7WXYFN4DG</li>
+      <li>Start Writing Prompts Like a Pro – Credential ID: 51EE90TXWYV3</li>
+      <li>Stay Ahead of the AI Curve – Credential ID: 3QER2G4UL14P</li>
+      <li>Use AI Responsibly – Credential ID: V8NTWOZMN5NP</li>
+      <li>Design Prompts for Everyday Work Tasks – Credential ID: DVYFJ62Q7XKS</li>
+      <li>Discover the Art of Prompting – Credential ID: RSP92U115Y00</li>
+      <li>Google Prompting Essentials – Credential ID: BB124KBN65Z9</li>
+      <li>Maximize Productivity With AI Tools – Credential ID: OQY7WXYFN4DG</li>
+    </ul>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages" style="margin-top: 40px; margin-bottom: 40px;">
+    <h2 class="section-title">Languages</h2>
+    <ul class="languages-list">
+      <li>English – Fluent</li>
+      <li>Urdu – Fluent</li>
+      <li>Marwari – Fluent</li>
+      <li>Sindhi – Fluent</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2024 Prince SK Kantia & Sawai. All rights reserved.
+</footer>
+
+</body>
+</html>
